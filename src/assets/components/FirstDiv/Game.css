@@ -1,0 +1,76 @@
+.game__Link {
+    text-decoration: none;
+    width: 100%;
+}
+
+.game {
+    width: 95%;
+    height: max-content;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.game__imageDiv {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.game__imageDiv:hover > img {
+    transform: scale(1.1);
+}
+
+.game__img {
+    width: 100%;
+    object-fit: contain;
+    transition: all .3s ease-out;
+}
+
+.game__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.game__name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: left;
+    color: white;
+}
+
+.game__developer {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #3a3d42;
+    text-transform: uppercase;
+
+}
+
+.game__price {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #4c4f54;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 400px) {
+    .game__info {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game__name {
+        text-align: center;
+    }
+}

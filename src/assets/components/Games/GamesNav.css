@@ -1,0 +1,56 @@
+.gamesNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.gamesNav__cont {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamesNav__active {
+    width: max-content;
+    padding: 0px 10px;
+    height: 40px;
+    border: 1px solid #414449;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.gamesNav__dot {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.gamesNav__searchDiv {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1b1e25;
+}
+
+.gamesNav__search {
+    width: 80% !important;
+    color: #fff !important;
+}
+
+.gamesNav__search::placeholder {
+    color: #3c3d42 !important;
+}
+
+.gamesNav__button {
+    width: 20%;
+    color: #3c3d42 !important;
+}

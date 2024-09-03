@@ -1,0 +1,125 @@
+.firstDiv {
+    background: #1e2128;
+    width: 80%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+}
+
+.firstDiv__cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.firstDivs__divsImg {
+    width: 66%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.firstDiv__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.firstDiv__divs {
+    width: 34%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstDiv__divsCont {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    position: relative;
+}
+
+.firstDiv__h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.firstDiv__p {
+    height: 100px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+.firstDiv__divsControl {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.firstDiv__button {
+    background-color: #2b2e35 !important;
+    color: white !important;
+    width: 130px;
+    height: 50px;
+}
+
+.firstDiv__arrows {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.firstDiv__arrow {
+    color: #5a5e69 !important;
+}
+
+
+@media screen and (max-width: 400px) {
+    .firstDiv {
+        height: max-content;
+    }
+    .firstDiv__cont {
+        flex-direction: column;
+    }
+
+    .firstDiv__divs {
+        width: 100%;
+    }
+
+    .firstDiv__divsCont {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .firstDivs__divsImg {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .firstDiv__divsControl {
+        position: relative;
+    }
+}

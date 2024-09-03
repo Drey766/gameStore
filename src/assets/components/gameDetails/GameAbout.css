@@ -1,0 +1,287 @@
+.gameAbout {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.gameAbout__cont {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gameAbout__divs1 {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gameAbout__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #56575c;
+}
+
+.gameAbout__about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gameAbout__about > p{
+    width: 80%;
+    text-align: left;
+    margin: 7px 0;
+}
+
+.gameAbout__requirements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gameAbout__requirementTitle {
+    font-size: 2rem;
+    color: #56575c;
+    margin-bottom: 30px;
+}
+
+.gameAbout__requirementsCont {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gameAbout__requrement {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.gameAbout__requirementName {
+    width: 50%;
+    text-align: left;
+    color: #56575c;
+}
+
+.gameAbout__requirementInfo{
+    width: 50%;
+    text-align: left;
+}
+
+.gameAbout__videoCont {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.gameAbout__videoCont {
+    width: 100% !important;
+    height: 100%;
+}
+
+.gameAbout__video {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.gameAbout__divs2 {
+    width: 31%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.gameAbout__divs2Cont {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gameAbout__buyCont {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.gameAbout__addToCart, #gameAbout__addToCart {
+    width: 45% !important;
+    height: 100%;
+    border: 2px solid #f5e053 !important;
+    color: #f5e053;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+#gameAbout__addToCart:focus {
+    border-color: #f5e053 !important;
+    outline: none;
+}
+
+.added {
+    background-color: #f5e053;
+    color: #56575c;
+}
+
+#gameAbout__addToCart:hover {
+    background-color: #f5e053;
+    color: #56575c;
+}
+
+.gameAbout__divs2Cont2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.gameAbout__gameName {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.gameAbout__divs2MainInfoCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.gameAbout__rating {
+    font-weight: 700;
+    color: #f5e053;
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+.gameAbout__divs2MainInfo {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.gameAbout__divs2MainInfoIcon {
+    margin-right: 30px;
+}
+
+.gameAbout__divs2MainInfoDetail {
+    text-align: left;
+}
+
+.gameAbout__divs2MainInfoCont2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+    color: #56575c;
+}
+
+.gameAbout__divs2MainInfo2 {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gameAbout__divs2MainInfo2 > span {
+    text-align: left;
+}
+
+.gameAbout__divs2MainInfo2Span1 {
+    margin-right: 30px;
+}
+
+.gameAbout__divs2MainInfo2Span2 {
+    width: 50%;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .gameAbout__cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gameAbout__divs1 {
+        width: 100%;
+    }
+
+    .gameAbout__title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gameAbout__about > p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gameAbout__requirementsCont {
+        width: 100%;
+    }
+
+    .gameAbout__requirementInfo {
+        text-align: right;
+    }
+
+    .gameAbout__divs2 {
+        width: 100%;
+    }
+
+    .gameAbout__gameName {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gameAbout__divs2MainInfo {
+        width: 100%;
+    }
+
+    .gameAbout__addToCart, #gameAbout__addToCart {
+        width: 50% !important;
+    }
+}
+

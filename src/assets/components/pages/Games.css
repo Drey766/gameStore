@@ -1,0 +1,17 @@
+.games {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+}
+
+.games__main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.games__games {
+    width: 85%;
+}

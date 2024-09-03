@@ -1,0 +1,9 @@
+#root {
+  max-width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  background: #15181d;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+

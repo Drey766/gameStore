@@ -1,0 +1,118 @@
+.categories {
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-right: 1px solid #13161b;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    background-color: #15181d;
+    overflow-x: scroll;
+    scrollbar-width: 5px;
+    scroll-behavior: smooth;
+
+
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background-color: #3b3c41;
+    border-radius: 10px;
+}
+
+.categories::-webkit-scrollbar {
+    width: 5px;
+}
+
+.category__spanButton {
+    display: none;
+}
+
+.categories:vertical {
+    display: none;
+    color: red;
+    background-color: red;
+}
+
+.categories__cont {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.category__divs1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.category__categories, .category__platforms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.category__category, .category__platform {
+    margin-bottom: 20px;
+    color: #3b3c41;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: right;
+}
+
+.active {
+    color: white ;
+}
+
+
+@media screen and (max-width: 400px) {
+    .categories {
+        top: 0;
+        width: 50%;
+        transform: translateX(-100%);
+        transition: all .4s ease-out;
+        overflow-x: visible;
+        position: absolute;
+        height: max-content;
+    }
+
+    .active {
+        transform: translateX(0%) !important;
+    }
+
+    .category__spanButton {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 55px;
+        transform: translateX(120px);   
+        background-color: gold;
+        color: black;
+        width: 110px;
+        padding-left: 10px;
+    }
+
+    .games__games {
+        width: 100% !important;
+    }
+
+    .gamesList__cont {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .gamesNav__searchDiv {
+        width: 60% !important;
+    }
+}
+

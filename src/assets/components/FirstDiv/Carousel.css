@@ -1,0 +1,77 @@
+.carousel {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.carousel__cont {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel__title {
+    align-self: flex-start;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: white;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.carousel__link {
+    text-decoration: none;
+    color: white;
+    width: 11%;
+    font-weight: 700;
+}
+
+.carousel__link:hover {
+    color: #f5e053;
+}
+
+.carousel__viewMore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel__carousel  {
+    height: 450px !important;
+    width: 100% !important;
+    position: unset;
+}
+
+.react-multi-carousel-item  {
+    padding: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+   .carousel__heading {
+    font-size: 1rem;
+   } 
+
+   .carousel__link {
+    width: 30%;
+    font-size: 1rem;
+   }
+}
+
+

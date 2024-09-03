@@ -1,0 +1,313 @@
+.header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar {
+      background-color: transparent;
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      -webkit-position: sticky;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      
+    }
+    
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      height: 80px;
+      max-width: 1500px;
+    }
+    
+    .main-container{
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      background-color:rgba(0,0,0,0.3);
+    }
+    
+    .nav-logo {
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      
+    }
+
+    .nav__logoLink {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .navMenu__cont {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .nav-menu {
+        justify-self: flex-start !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      text-align: center;
+      margin-right: 2rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 80%;
+    }
+    
+    .nav-links {
+      text-decoration: none;
+      padding: 0.1rem 0.2rem;
+      height: 100%;
+      border-bottom: 3px solid transparent;
+      font-size: 1rem;
+      font-weight: 550;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .fa-code {
+      margin-left: 1rem;
+    }
+    
+  .header__links {
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav__counter {
+    font-size: 1rem !important;
+  }
+  
+    .nav-item {
+      line-height: 40px;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    
+    .nav-item:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 0;
+      background: transparent;
+      transition: width 0.7s ease, background-color 0.5s ease;
+    }
+    
+    .nav-item:hover:after {
+      width: 100%;
+      background: #f5e053;
+    }
+    
+    .nav-item.active {
+      color: #f5e053;
+      border: #f5e053;
+      
+    }
+    
+    .nav-icon {
+      display: none;
+    }
+  
+    .nav-link {
+      list-style: none;
+      text-decoration: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f5e053 !important;
+    }
+  
+    .nav__shoppingCart {
+      width: 10%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-right: 20px;
+    }
+  
+    .header__linksBasket {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+      background-color: #f5e053;
+      color: black;
+      border: 1px solid transparent;
+      transition: all .3s ease-out;
+    }
+
+    .header__linksBasket:hover {
+        border-color: white;
+        background-color: transparent;
+        color: white !important;
+    }
+  
+    .nav__basket {
+      margin-right: 5px;
+      transition: all .5s ease-out;
+    }
+  
+    .header__links:hover  {
+      color: #f5e053 !important;
+    }
+  
+    .nav__basket:hover {
+      color: #f5e053 !important;
+    }
+  
+    .sticky {
+      position: fixed;
+      background: white;
+      transition: all .8s ease-out;
+    }
+
+    .logo1 {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo__inner {
+        height: 50%;
+        width: 50%;
+        background-color: black;
+        border-radius: 50%;
+    }
+  
+    @keyframes navload {
+      0% {
+          transform: translateY(-100%);
+      }
+  
+      90% {
+          transform: translateY(10%);
+      }
+      100%{
+          transform: translateY(0);
+      }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .navbar ul {
+      width: 80%;
+  }
+  }
+    
+    @media screen and (max-width: 650px) {
+  
+      .navbar ul {
+        width: 100%;
+        z-index: 99;
+        
+    }
+  
+    .nav-container {
+      width: 90%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+      
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 80px;
+        left: -120%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        padding: 0;
+      }
+
+      .nav__logoLink {
+        width: 38px;
+        height: 38px;
+      }
+    
+      .nav-menu.active {
+        background:#15181d;
+        left: 0px;
+        z-index: 9999;
+        max-width: 98vw;
+      }
+      .nav-item {
+        margin-bottom: 20px;
+      }
+      .nav-item .active {
+        color: #ffdd40;
+        border: none;
+      }
+      .nav-links {
+        width: 100%;
+        display: table;
+        font-size: 2rem;
+      }
+    
+      .nav-icon {
+        display: flex;
+        font-size: 1.4rem;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        color: white;
+      }
+  
+      .nav-icon > i {
+          min-height: 15px !important;
+          min-width: 15px;
+          color: var(--green);
+      }
+  
+      .nav__shoppingCart {
+        width: 50%;
+        justify-content: space-between;
+      }
+
+      .header__linksBasket {
+        width: 70%;
+      }
+  
+      
+    }

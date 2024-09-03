@@ -1,0 +1,56 @@
+.gamesList {
+    min-height: 100vh;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.gamesList__cont {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20px;
+}
+
+.laoding__nav {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameList__navigation {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.gameList__carousel {
+    height: 100% !important;
+    width: 80% !important;
+    position: unset;
+}
+
+.gameList__carousel > .react-multiple-carousel__arrow--left {
+    left: calc(19% + 1px);
+}
+
+.activePage {
+    /* styles for the active page button */
+    background-color: #f5e053;
+    color: black;
+  }
+
+@media screen and (max-width:400px) {
+    .gameList__carousel {
+        width: 60% !important;
+    }
+}
